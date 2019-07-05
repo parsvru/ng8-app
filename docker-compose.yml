@@ -1,0 +1,12 @@
+version: "3"
+services: 
+  conichi-ng-app:
+    build: .
+    ports:
+      - "8080:4200"
+    environment:
+     - HOST=0.0.0.0
+    command: npm run start
+networks:
+  conichi-ng-app:
+    driver: bridge

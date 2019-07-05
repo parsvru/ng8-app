@@ -1,0 +1,105 @@
+.page-container {
+    min-height: 100vh;
+    overflow: hidden;
+    display: block;
+    position: relative;
+    padding-bottom: 50px;
+}
+
+.main-title {
+    font-size: 22px;
+    text-align: center;
+    font-weight: 600;   
+    letter-spacing: -1px;
+}
+
+header {
+    border-bottom: 2px solid #85bc22;
+}
+
+.navbar-toggler {
+    font-size: 1em;   
+}
+
+.navbar-light .navbar-toggler {
+    border-color: transparent;
+}
+
+.sub-title {
+    text-align: center;
+    letter-spacing: -1px;
+    font-size: 32px;
+    font-weight: 450;
+}
+
+.description {
+    text-align: center;
+}
+
+hr {
+    border-top: 3px solid #a9b1b7;
+}
+
+.blk-spacing {
+    padding: 0 25px;
+}
+
+.add-new {
+    background-color: #005578;
+    border-radius: 15px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.add-new h3 {
+    font-size: 20px;
+}
+
+.add-new p {
+ font-size: 13px;
+}
+
+.add-new .plus-icn {
+    color: #7fa9bb;
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: -16px;
+}
+
+.btn-back {
+    border: 2px solid #85bc22;
+    color: #85bc22;
+    width: 150px;
+    font-size: 15px;
+    font-weight: 550;
+    border-radius: 25px;
+}
+
+.btn-submit {
+    border: 2px solid #85bc22;
+    color: #fff;
+    width: 150px;
+    font-size: 15px;
+    font-weight: 550;
+    border-radius: 25px;
+    background-color: #85bc22
+}
+
+
+.footer {   
+    background-color: #e2e2e2;
+    text-align: center;
+    color: #2b3744;
+    font-size: 12px;
+    font-weight: 600; 
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .blk-spacing {
+        padding: 0 10px;
+    }
+}

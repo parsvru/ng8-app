@@ -1,1 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+    font-family:"Segoe UI",Roboto,"Helvetica Neue", Arial, sans-serif;  
+    color: #414549;
+    font-size: 14px;  
+    background-color: #f2f2f2;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+} 
+
+html {
+    height: 100%;
+    box-sizing: border-box;
+  }
+

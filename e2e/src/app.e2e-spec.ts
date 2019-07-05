@@ -1,5 +1,5 @@
 import { AppPage } from './app.po';
-import { browser, logging } from 'protractor';
+import { browser, logging, element, by } from 'protractor';
 
 describe('workspace-project App', () => {
   let page: AppPage;
@@ -8,9 +8,23 @@ describe('workspace-project App', () => {
     page = new AppPage();
   });
 
-  it('should display welcome message', () => {
+  it('h1 should display Smart Check-out', () => {
     page.navigateTo();
-    expect(page.getTitleText()).toEqual('Welcome to conichi-ng-app!');
+    expect(page.getTitleText()).toEqual('Smart Check-out');
+  });
+
+  it('Verify the  button present', function() {
+    expect(element(by.css('button')).isPresent()).toBe(true);
+  });
+
+  it('h2 should display Select Billing Address', () => {
+    var h2 = element(by.css('h2'));
+    expect(h2.getText()).toEqual('SELECT BILLING ADDRESS');
+  });
+
+  it('footer should display copyright text', () => {
+    var h2 = element(by.css('.footer'));
+    expect(h2.getText()).toEqual('© 2018 - Hotel Beacons GmbH');
   });
 
   afterEach(async () => {

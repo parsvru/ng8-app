@@ -1,0 +1,56 @@
+<div class="page-container">
+<header class="mb-4">
+    <div class="row mt-3 blk-spacing">
+        <div class="col">
+        <div class="pos-f-t">
+                <div class="collapse" id="navbarToggleExternalContent">
+                    <div class="bg-dark p-4">
+                    <h5 class="text-white h4">conichi</h5>                   
+                    </div>
+                </div>
+                <nav class="navbar p-0 navbar-light">
+                    <button class="navbar-toggler p-0" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                </nav>
+                </div>
+        </div>
+        <div class="col-6">
+            <h1 class="main-title" >{{global?.title}}</h1>
+        </div>
+        <div class="col">
+           <a href="javascript:;"  class="align-middle float-right"><img  width="26" height="17" src="assets/images/en.jpg" title="Language"></a>
+        </div>
+    </div>
+</header>
+<div class="container pb-3">
+<h2 class="sub-title mb-4 text-uppercase">{{content?.heading}}</h2>
+<p class="description">{{content?.description}}</p>
+<app-organism-billing-addresses></app-organism-billing-addresses>
+<section class="add-new pt-5 pb-4">
+    <div class="row mr-0 ml-0">
+            <div class="col">
+                <h3 class="text-uppercase m-0">{{addnewaddress?.heading}}</h3>
+                <p  class="text-uppercase p-0 m-0">{{addnewaddress?.description}}</p>
+            </div>
+            <div class="col">
+                <p class="float-right plus-icn">+</p>
+            </div>
+    </div>
+</section>
+<hr/>
+<button class="btn btn-default btn-back p-2 text-uppercase" type="button">{{global?.back}}</button>
+<button class="btn btn-primary btn-submit p-2 float-right text-uppercase" type="submit">{{global?.submit}}</button>
+</div>
+<footer class="mt-4">
+        <div class="row mb-4 blk-spacing">
+            <div class="col">
+                    <img  width="86" height="25" src="assets/images/logo.jpg" title="Conichi">
+            </div>
+            <div class="col">
+                    <img class="float-right" width="148" height="15" src="assets/images/slogan.jpg" title="SmartHotel">
+            </div>
+        </div>
+   <div class="footer pt-3 pb-3"> {{global?.copyright}}</div>
+</footer>
+</div>
