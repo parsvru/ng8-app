@@ -4,12 +4,12 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Task Done 
 
-1. Create a new Angular Web Application (React is also acceptable) served via a NGINX / Node Server. --done
-2. Serve a single page at the root: `/`. --done
-	* The page should be designed as per the accompanied design assets.--done
-	* Extract static assets into your app as needed.--done
-	* All page-components may be mocked (e.g. clicking on the CTAs does not need to perform any action).--done
-3. Read data (server-side) to display on the page from the following endpoints: --done
+1. Create a new Angular Web Application served via a NGINX / Node Server. 
+2. Serve a single page at the root: `/`.
+	* The page should be designed as per the accompanied design assets.
+	* Extract static assets into your app as needed.
+	* All page-components may be mocked (e.g. clicking on the CTAs does not need to perform any action).
+3. Read data (server-side) to display on the page from the following endpoints:
 	* https://rawgit.com/rohit-dantas-conichi/3cf7d1da56f60959adfc4664cff31189/raw/e97db2ad3940dce2a7da1ececcc1375b1f46311d/page-select_billing_address-en.json
 	* https://rawgit.com/rohit-dantas-conichi/48635f6c8eead55a4b16e8670a813ac5/raw/eefc1c5180234519816df4d7293892fb92bab0e0/organism-billing_addresses-en.json
 3. Add unit-test coverage as appropriate (potential test tools: karma, jasmine).
