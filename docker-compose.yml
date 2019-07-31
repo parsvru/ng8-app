@@ -1,6 +1,6 @@
 version: "3"
 services: 
-  conichi-ng-app:
+  ng8-app:
     build: .
     ports:
       - "8080:4200"
@@ -8,5 +8,5 @@ services:
      - HOST=0.0.0.0
     command: npm run start
 networks:
-  conichi-ng-app:
+  ng8-app:
     driver: bridge

@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "conichi-ng-app": {
+    "ng8-app": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/conichi-ng-app",
+            "outputPath": "dist/ng8-app",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -59,18 +59,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "conichi-ng-app:build"
+            "browserTarget": "ng8-app:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "conichi-ng-app:build:production"
+              "browserTarget": "ng8-app:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "conichi-ng-app:build"
+            "browserTarget": "ng8-app:build"
           }
         },
         "test": {
@@ -108,15 +108,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "conichi-ng-app:serve"
+            "devServerTarget": "ng8-app:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "conichi-ng-app:serve:production"
+              "devServerTarget": "ng8-app:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "conichi-ng-app"
+  "defaultProject": "ng8-app"
 }
